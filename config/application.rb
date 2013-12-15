@@ -11,6 +11,9 @@ require "sprockets/railtie"
 # you've limited to :test, :development, or :production.
 Bundler.require(:default, Rails.env)
 
+config = File.expand_path(File.join(File.dirname(__FILE__), "config.yml"))
+SPConfig = YAML.load_file(config)[Rails.env]
+
 require_relative '../lib/sponsor_action'
 
 module SpChallenge
