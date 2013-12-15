@@ -1,0 +1,31 @@
+.content {
+  margin: 0 auto 50px;
+  max-width: 800px;
+  padding: 0 2em;
+}
+
+#form {
+  text-align: center;
+  padding: 35px;
+
+  border-bottom: 1px solid black;
+
+  input {
+    border: 1px solid black;
+  }
+}
+
+.alert {
+  padding: 20px;
+  color: white;
+  background-color: #ccaaaa;
+}
+
+.alert.success { background-color: #aaccaa }
+
+.offer {
+  padding: 10px;
+
+  .title { font-size: 2em }
+  .payout { color: red }
+}
