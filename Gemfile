@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+gem 'decent_exposure'
 gem 'draper'
 
 gem 'haml'

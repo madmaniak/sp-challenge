@@ -36,6 +36,7 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.6.3)
+    decent_exposure (2.3.0)
     diff-lcs (1.2.5)
     draper (1.2.1)
       actionpack (>= 3.0)
@@ -141,6 +142,7 @@ PLATFORMS
 
 DEPENDENCIES
   coffee-rails (~> 4.0.0)
+  decent_exposure
   draper
   haml
   hashie
