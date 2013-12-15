@@ -1,11 +1,4 @@
 = form_tag do
-  = label_tag :uid, 'User:'
-  = text_field_tag :uid
-
-  = label_tag :pub0, 'Pub0:'
-  = text_field_tag :pub0
-
-  = label_tag :page, 'Page:'
-  = text_field_tag :page
-
-  = submit_tag 'Show'
+  = render 'field', key: :uid,  label_text: 'User:'
+  = render 'field', key: :pub0, label_text: 'Pub0:'
+  = render 'field', key: :page, label_text: 'Page:'
