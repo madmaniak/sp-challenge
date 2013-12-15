@@ -37,11 +37,13 @@ module SP
     def define_get
       define_singleton_method :get do
         action = self.class.to_s.underscore
-        response = self.class.get "/#{action}.json?" + prepared_options
 
-        valid_response = validate! response
+        Rails.cache.fetch "#{action}#{@params.values.join}", expires_in: 1.minute do
+          response = self.class.get "/#{action}.json?" + prepared_options
+          valid_response = validate! response
+          make_object valid_response
+        end
 
-        make_object valid_response
       end
     end
 
