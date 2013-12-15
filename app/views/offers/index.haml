@@ -1,0 +1,8 @@
+- offers.all.each do |offer|
+  .offer
+    .title= offer.title
+    .payout= offer.payout
+    .thumbnail= image_tag offer.thumbnail.lowres
+
+%h1.no_offers{ style: ('display:none' unless offers.no?) }
+  No offers
