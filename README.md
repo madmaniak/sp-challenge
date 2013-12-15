@@ -1,4 +1,4 @@
-== Quick Start
+# Quick Start
 
 ```
 git clone git@github.com:madmaniak/sp-challenge.git
