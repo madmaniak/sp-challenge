@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+gem 'haml'
+
 gem 'hashie'
 
 gem 'httparty'
